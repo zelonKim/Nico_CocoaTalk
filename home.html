@@ -101,24 +101,296 @@
              <input type="submit" value="Create Account"/>
     </form>
 </body>
-</html> -->
+</html> 
+-->
 
 
+
+
+
+
+<!-- 
 
 <!DOCTYPE html>
 <html lang="kr">
 <head>
-    <title>Home - My first website</title>
+    <title>Nico Times</title>
+    <style>
+        * {
+            border: 1px dashed black;
+        }
+        html {
+            background-color: tomato;
+        }
+        body {
+            margin: 20px;
+            padding: 20px;
+            background-color: teal;
+        }
+        div {
+            padding: 20px;
+            border: 5px solid black;
+        }
+
+        #first {
+            background-color: orange;
+            width: 150px;
+            height: 150px;
+        }
+        #second {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+        #third {
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+        }
+        span {
+            border-style: dotted;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Nico Times</h1>
-    </header>
-    <main>
-        <p>hello</p>
-    </main>
-    <footer>
-        &copy; 2024
-    </footer>
+    <div id="first">
+        <div id="second">
+            <div id="third">
+                <span>hello</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
+
+-->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Nico Times</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .teal {
+            background-color: teal;
+        }
+
+        .tomato {
+            background-color: tomato;
+            color: white;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <span class="teal">hello</span>
+    <span class="tomato">hello</span>
+    <span class="teal btn">hello</span>
+    <span class="tomato btn">hello</span>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Nico Times</title>
+    <style>
+        body {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            Flex-wrap: nowrap;
+            flex-direction: row;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            background-color: teal;
+        }
+        #second {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Nico Times</title>
+    <style>
+        body {
+            margin: 50px;
+            height: 1000vh;
+        }
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            position: relative;
+   
+        }
+        .green {
+            background-color: teal;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            right: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="green"></div>
+    </div>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Nico Times</title>
+    <style>
+        body {
+            margin: 50px;
+            height: 1000vh;
+        }
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            position: relative;
+        }
+        div:first-child {
+            background-color: tomato;
+        }
+        div:last-child {
+            background-color: teal;
+        }
+        div span {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+        <div>
+            <span>1</span>
+        </div>
+    <div></div>
+    <div></div>
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Nico Times</title>
+    <style>
+        body {
+            height: 1000vh;
+            margin: 50px;
+        }
+        span {
+            background-color: yellowgreen;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        div span {
+            color: black;
+        }
+        div > span {
+            background-color: blue;
+        }
+        p + address {
+            color: yellow;
+        }
+        p ~ span {
+            color: red;
+        }
+
+        input:required {
+            border: 1px solid tomato;
+        }
+
+        input[type="text"] {
+            background-color:blue;
+        }
+
+        input[placeholder="password"] {
+            background-color:yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <input type="text" placeholder="username" />
+            <input type="password" placeholder="password" required/>
+        </form>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        button:active {
+            background-color: tomato;
+        }
+        button:hover {
+            background-color: blue;
+        }
+        input:focus {
+            background-color:aqua;
+        }
+        a:visited {
+            color: red;
+        }
+        div:focus-within {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+   <div>
+        <button>Hello</button>
+        <input />
+        <a href="https://apple.com">Go to apple</a>
+   </div> 
 </body>
 </html>
